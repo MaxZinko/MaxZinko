@@ -1,4 +1,4 @@
-.mainbody{
+.body{
 	margin:0;
 	}
 .top{
@@ -6,43 +6,123 @@
 	padding-left:100;
 	background-color:#92000A;
 }
-.media_block{
-	display:inline;
-	}
 .top_media{
 	width:17;
 	height:17;
 	margin:5 5 0 5;
 	}
 .main_header{
-	height:110px;
+	height:100;
+	position:relative;
+	padding-right:60;
 }
+.main_header ul {
+	list-style:none;
+	float:right;
+	margin-top:40;
+	}
+.main_header ul li {
+		display:inline;
+		margin-right:15;
+	}
 .restaurant_logo{
-	margin:45 350 -10 45;
+	position:relative;
+	margin:40 0 0 55;
 }
 .menu{
-	font-size:15px;
-	margin: 100 12 0 12;
+	font-size:16px;
+	color:#5a5a5a;
+	text-decoration:none;
 }
 .first_block{
 	background-image:url(block1_img.jpg);
-	height:500;
+	height:630;
 	position:relative;
+	background:url(block1_img.jpg) no-repeat center center;
 	}
 .block1_text1{
-	display:inline-block;
     position:absolute;
-    top:150px;  
+    top:185px;  
     left:20px;
 	background-color:white;
-	font-size:60px;
+	color:rgba(188, 49, 49, 0.90);
+	padding:10 20;
+	font-size:50px;
 	}
 .block1_text2{
-	display:inline-block;
     position:absolute;
-    top:250px;  
+    top:280px;  
     left:20px;
-	font-size: 21px;
-	font-weight:300;
+	font-size: 18px;
+	color:white;
+	letter-spacing:2.5;
+	width:575;
+	padding:12 20;
 	background-color:rgba(188, 49, 49, 0.90);
 	}
+	.block1_text3{
+    position:absolute;
+    top:345px;  
+    left:20px;
+	font-size: 20px;
+	color:white;
+	letter-spacing:0.5;
+	width:185;
+	text-align:center;
+	padding:12 20;
+	background-color:rgba(188, 49, 49, 0.90);
+	}
+	.second_block{
+		height:500;
+		margin:80 auto 100 auto;
+		}
+	.second_block ul {
+		list-style:none;
+	}
+	.second_block ul li {
+		display:inline;
+		margin:0 13;
+	}
+	.block2_img{
+		height:248;
+		width:370;
+		}
+	.block2_headtext{
+		width:65%;
+		text-align:center-left;
+		letter-spacing:0.5;
+		margin:30 0 0 22%;
+		color:#7a7a7a;
+	}
+	.block2_subtext{
+		width:65%;
+		text-align:center-left;
+		letter-spacing:0.5;
+		line-height:1.5;
+		margin:15 0 0 22%;
+		color:#7a7a7a;
+	}
+	.block2_text{
+		float:left;
+		width:400;
+		margin-bottom:100;
+		}
+	.third_block{
+		position:relative;
+		background-color:#282828;
+		height:470;
+		margin-bottom:100;
+		}
+	.third_block h2{
+		position:absolute;
+		margin:90 0 0 60;
+		text-align:left;
+		color:white;
+	}
+	.third_block з{
+		position:absolute;
+		margin:130 0 0 60;
+		text-align:left;
+		color:white;
+	}
+	
