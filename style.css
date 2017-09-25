@@ -1,12 +1,19 @@
 .mainbody{
-	margin:0 0 0 0;
+	margin:0;
 	}
 .top{
 	height:30px;
-	width:
-	margin:-8 -8 0 -8;
+	padding-left:100;
 	background-color:#92000A;
 }
+.media_block{
+	display:inline;
+	}
+.top_media{
+	width:17;
+	height:17;
+	margin:5 5 0 5;
+	}
 .main_header{
 	height:110px;
 }
@@ -17,20 +24,25 @@
 	font-size:15px;
 	margin: 100 12 0 12;
 }
-
+.first_block{
+	background-image:url(block1_img.jpg);
+	height:500;
+	position:relative;
+	}
 .block1_text1{
 	display:inline-block;
     position:absolute;
-    top:300px;  
+    top:150px;  
     left:20px;
 	background-color:white;
-	font-size:30px;
+	font-size:60px;
 	}
 .block1_text2{
 	display:inline-block;
     position:absolute;
-    top:400px;  
+    top:250px;  
     left:20px;
-	font-size: 16px;
+	font-size: 21px;
+	font-weight:300;
 	background-color:rgba(188, 49, 49, 0.90);
 	}
