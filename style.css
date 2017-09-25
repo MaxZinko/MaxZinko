@@ -1,0 +1,36 @@
+.mainbody{
+	margin:0 0 0 0;
+	}
+.top{
+	height:30px;
+	width:
+	margin:-8 -8 0 -8;
+	background-color:#92000A;
+}
+.main_header{
+	height:110px;
+}
+.restaurant_logo{
+	margin:45 350 -10 45;
+}
+.menu{
+	font-size:15px;
+	margin: 100 12 0 12;
+}
+
+.block1_text1{
+	display:inline-block;
+    position:absolute;
+    top:300px;  
+    left:20px;
+	background-color:white;
+	font-size:30px;
+	}
+.block1_text2{
+	display:inline-block;
+    position:absolute;
+    top:400px;  
+    left:20px;
+	font-size: 16px;
+	background-color:rgba(188, 49, 49, 0.90);
+	}
