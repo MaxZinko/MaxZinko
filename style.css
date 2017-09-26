@@ -2,9 +2,9 @@
 	margin:0;
 	}
 .top{
-	height:30px;
+	height:30;
 	padding-left:100;
-	background-color:#92000A;
+	background-color:#ac3031;
 }
 .top_media{
 	width:17;
@@ -14,12 +14,13 @@
 .main_header{
 	height:100;
 	position:relative;
-	padding-right:60;
+	padding-right:50;
 }
 .main_header ul {
 	list-style:none;
-	float:right;
+	float:left;
 	margin-top:40;
+	margin-left:270;
 	}
 .main_header ul li {
 		display:inline;
@@ -27,40 +28,44 @@
 	}
 .restaurant_logo{
 	position:relative;
+	float:left;
 	margin:40 0 0 55;
 }
 .menu{
 	font-size:16px;
 	color:#5a5a5a;
 	text-decoration:none;
+	padding-left:10;
 }
 .first_block{
-	background-image:url(block1_img.jpg);
 	height:630;
+	width:100%;
 	position:relative;
 	background:url(block1_img.jpg) no-repeat center center;
+	background-size:cover;
+	
 	}
 .block1_text1{
     position:absolute;
-    top:185px;  
-    left:20px;
+    top:185;  
+    left:20;
 	background-color:white;
 	color:rgba(188, 49, 49, 0.90);
 	padding:10 20;
-	font-size:50px;
+	font-size:50;
 	}
 .block1_text2{
     position:absolute;
-    top:280px;  
-    left:20px;
-	font-size: 18px;
+    top:280;  
+    left:20;
+	font-size: 18;
 	color:white;
 	letter-spacing:2.5;
 	width:575;
 	padding:12 20;
 	background-color:rgba(188, 49, 49, 0.90);
 	}
-	.block1_text3{
+.block1_text3{
     position:absolute;
     top:345px;  
     left:20px;
@@ -72,57 +77,140 @@
 	padding:12 20;
 	background-color:rgba(188, 49, 49, 0.90);
 	}
-	.second_block{
-		height:500;
-		margin:80 auto 100 auto;
+.second_block{
+	height:500;
+	margin:80 0 0 0;
 		}
-	.second_block ul {
-		list-style:none;
+.second_block ul {
+	list-style:none;
 	}
-	.second_block ul li {
-		display:inline;
-		margin:0 13;
+.second_block ul li {
+	display:inline;
+	margin:0 13;
 	}
-	.block2_img{
-		height:248;
-		width:370;
+.block2_img{
+	width:30%;
 		}
-	.block2_headtext{
-		width:65%;
-		text-align:center-left;
-		letter-spacing:0.5;
-		margin:30 0 0 22%;
-		color:#7a7a7a;
+.block2_headtext{
+	width:65%;
+	text-align:center-left;
+	letter-spacing:0.5;
+	margin:30 0 0 22%;
+	color:#7a7a7a;
 	}
-	.block2_subtext{
-		width:65%;
-		text-align:center-left;
-		letter-spacing:0.5;
-		line-height:1.5;
-		margin:15 0 0 22%;
-		color:#7a7a7a;
+.block2_subtext{
+	width:65%;
+	text-align:center-left;
+	letter-spacing:0.5;
+	line-height:1.5;
+	margin:15 0 0 22%;
+	color:#7a7a7a;
 	}
-	.block2_text{
-		float:left;
-		width:400;
-		margin-bottom:100;
+.block2_text{
+	float:left;
+	width:30%;
 		}
-	.third_block{
-		position:relative;
-		background-color:#282828;
-		height:470;
-		margin-bottom:100;
+.third_block{
+	position:relative;
+	background-color:#282828;
+	height:430;
+	margin-bottom:70;
+	margin-top:15%;
+	padding:60 0 0 10%;
 		}
-	.third_block h2{
-		position:absolute;
-		margin:90 0 0 60;
-		text-align:left;
-		color:white;
+.third_block h2{
+	position:absolute;
+	text-align:left;
+	color:white;
+	font-size:32;
 	}
-	.third_block з{
-		position:absolute;
-		margin:130 0 0 60;
-		text-align:left;
-		color:white;
+.block3_text{
+	position:absolute;
+	text-align:left;
+	width:565;
+	padding-top:80;
+	font-size:17;
 	}
-	
+.third_block p{
+	color:white;
+	}
+.block3_img{
+	position:absolute;
+	float:left;
+	text-align:left;
+	margin-left:800;
+		}
+.forth_block{
+	position:relative;
+	height:600;
+}
+.block4_header{
+	font-size:32;
+	color:#5a5a5a;
+	margin-bottom:40;
+}
+.block4_column{
+	display:inline;
+	float:left;
+	height:700;
+	width:42%;
+	padding:0 0 0 60;
+}
+.block4_img{
+	float:left;
+	height:120;
+	width:120;
+	border-radius:50%;
+}
+.block4_item{
+	display:block;
+	height:140;
+}
+.block4_item p{
+	text-align:left;
+	margin-left:150;
+	width:250;
+	height:20;
+	font-size:14;
+	letter-spacing:0.5;
+	color:#5a5a5a;
+}
+.block4_price{
+	position:absolute;
+	float:right;
+	margin:-55 0 0 320;
+	font-size:14;
+	color:white;
+	padding:8 15;
+	background-color:#ac3031;
+}
+.fifth_block{
+	position:relative;
+	background-color:#282828;
+	height:430;
+	margin-bottom:55;
+	padding:120 0 0 10%;
+	background-image:url(block5_bg.jpg);
+	background-size: cover;
+		}
+.fifth_block h2{
+	position:absolute;
+	text-align:left;
+	color:white;
+	font-size:32;
+	padding-left:380;
+	}
+.block5_text{
+	position:absolute;
+	text-align:left;
+	width:725;
+	padding-left:380;
+	padding-top:80;
+	font-size:16;
+	}
+.fifth_block p{
+	color:white;
+	}
+.block5_img{
+	float:left;
+		}
