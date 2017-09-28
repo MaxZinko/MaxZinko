@@ -1,27 +1,27 @@
 .body{
-	margin:0;
+	margin:0px;
 	font-family: "Open Sans", sans-serif;
 	}
 .top{
-	height:30;
-	padding-left:100;
+	height:30px;
+	padding-left:100px;
 	background-color:#ac3031;
 }
 .top_media{
-	width:17;
-	height:17;
-	margin:5 5 0 5;
+	width:17px;
+	height:17px;
+	margin:5px 5px 0px 5px;
 	}
 .main_header{
-	height:100;
+	height:100px;
 	position:relative;
-	padding-right:50;
+	padding-right:50px;
 }
 .main_header ul {
 	list-style:none;
 	float:left;
-	margin-top:40;
-	margin-left:290;
+	margin-top:40px;
+	margin-left:290px;
 	}
 .main_header ul li {
 		display:inline;
@@ -29,16 +29,16 @@
 .restaurant_logo{
 	position:relative;
 	float:left;
-	margin:40 0 0 55;
+	margin:40px 0px 0px 55px;
 }
 .menu{
 	font-size:13px;
 	color:#5a5a5a;
 	text-decoration:none;
-	padding-left:25;
+	padding-left:25px;
 }
 .first_block{
-	height:630;
+	height:630px;
 	width:100%;
 	position:relative;
 	background:url(block1_img.jpg) no-repeat center center;
@@ -47,22 +47,22 @@
 	}
 .block1_text1{
     position:absolute;
-    top:185;  
-    left:20;
+    top:185px;  
+    left:20px;
 	background-color:white;
 	color:rgba(188, 49, 49, 0.90);
-	padding:10 20;
-	font-size:50;
+	padding:10px 20px;
+	font-size:50px;
 	}
 .block1_text2{
     position:absolute;
-    top:280;  
-    left:20;
-	font-size: 18;
+    top:280px;  
+    left:20px;
+	font-size: 18px;
 	color:white;
-	letter-spacing:2.5;
-	width:575;
-	padding:12 20;
+	letter-spacing:2.5px;
+	width:575px;
+	padding:12px 20px;
 	background-color:rgba(188, 49, 49, 0.90);
 	}
 .block1_text3{
@@ -72,21 +72,21 @@
 	font-size: 20px;
 	color:white;
 	letter-spacing:0.5;
-	width:185;
+	width:185px;
 	text-align:center;
-	padding:12 20;
+	padding:12px 20px;
 	background-color:rgba(188, 49, 49, 0.90);
 	}
 .second_block{
-	height:500;
-	margin:80 0 0 0;
+	height:500px;
+	margin:80px 0px 0px 0px;
 		}
 .second_block ul {
 	list-style:none;
 	}
 .second_block ul li {
 	display:inline;
-	margin:0 13;
+	margin:0px 13px;
 	}
 .block2_img{
 	width:30%;
@@ -94,16 +94,16 @@
 .block2_headtext{
 	width:65%;
 	text-align:center-left;
-	letter-spacing:0.5;
-	margin:30 0 0 22%;
+	letter-spacing:0.5px;
+	margin:30px 0px 0px 22%;
 	color:#7a7a7a;
 	}
 .block2_subtext{
 	width:65%;
 	text-align:center-left;
-	letter-spacing:0.5;
-	line-height:1.5;
-	margin:15 0 0 22%;
+	letter-spacing:0.5px;
+	line-height:1.5px;
+	margin:15px 0px 0px 22%;
 	color:#7a7a7a;
 	}
 .block2_text{
@@ -113,23 +113,23 @@
 .third_block{
 	position:relative;
 	background-color:#282828;
-	height:430;
-	margin-bottom:70;
+	height:430px;
+	margin-bottom:70px;
 	margin-top:15%;
-	padding:60 0 0 10%;
+	padding:60px 0px 0px 10%;
 		}
 .third_block h2{
 	position:absolute;
 	text-align:left;
 	color:white;
-	font-size:32;
+	font-size:32px;
 	}
 .block3_text{
 	position:absolute;
 	text-align:left;
-	width:565;
-	padding-top:80;
-	font-size:17;
+	width:565px;
+	padding-top:80px;
+	font-size:17px;
 	}
 .third_block p{
 	color:white;
@@ -138,58 +138,58 @@
 	position:absolute;
 	float:left;
 	text-align:left;
-	margin-left:800;
+	margin-left:800px;
 		}
 .forth_block{
 	position:relative;
-	height:600;
+	height:600px;
 }
 .block4_header{
-	font-size:32;
+	font-size:32px;
 	color:#5a5a5a;
-	margin-bottom:40;
+	margin-bottom:40px;
 }
 .block4_column{
 	display:inline;
 	float:left;
-	height:700;
+	height:700px;
 	width:42%;
-	padding:0 0 0 60;
+	padding:0px 0px 0px 60px;
 }
 .block4_img{
 	float:left;
-	height:120;
-	width:120;
+	height:120px;
+	width:120px;
 	border-radius:50%;
 }
 .block4_item{
 	display:block;
-	height:140;
+	height:140px;
 }
 .block4_item p{
 	text-align:left;
-	margin-left:150;
-	width:250;
-	height:20;
-	font-size:14;
-	letter-spacing:0.5;
+	margin-left:150px;
+	width:250px;
+	height:20px;
+	font-size:14px;
+	letter-spacing:0.5px;
 	color:#5a5a5a;
 }
 .block4_price{
 	position:absolute;
 	float:right;
-	margin:-55 0 0 320;
-	font-size:14;
+	margin:-55px 0px 0px 320px;
+	font-size:14px;
 	color:white;
-	padding:8 15;
+	padding:8px 15px;
 	background-color:#ac3031;
 }
 .fifth_block{
 	position:relative;
 	background-color:#282828;
-	height:430;
-	margin-bottom:55;
-	padding:120 0 0 10%;
+	height:430px;
+	margin-bottom:55px;
+	padding:120px 0px 0px 10%;
 	background-image:url(block5_bg.jpg);
 	background-size: cover;
 		}
@@ -197,16 +197,16 @@
 	position:absolute;
 	text-align:left;
 	color:white;
-	font-size:32;
-	padding-left:380;
+	font-size:32px;
+	padding-left:380px;
 	}
 .block5_text{
 	position:absolute;
 	text-align:left;
-	width:725;
-	padding-left:380;
-	padding-top:80;
-	font-size:16;
+	width:725px;
+	padding-left:380px;
+	padding-top:80px;
+	font-size:16px;
 	}
 .fifth_block p{
 	color:white;
