@@ -1,19 +1,23 @@
+@import "../../variables.scss";
 .fifth_block{
 	position:relative;
-	background-color:#282828;
+	background-color:$color2;
 	height:430px;
 	margin-bottom:55px;
 	padding:120px 0px 0px 10%;
-	background-image:url(http://newthemes.net/artim/sectors/restaurant/wp-content/uploads/2016/11/webproduct_darkbg2.jpg);
+	background-image:url(/assets/block5_bg.jpg);
 	background-size: cover;
-		}
-.fifth_block h2{
+	 h2{
 	position:absolute;
 	text-align:left;
 	color:white;
 	font-size:32px;
 	padding-left:380px;
 	}
+	p{
+	color:$white;
+	}
+}
 .block5_text{
 	position:absolute;
 	text-align:left;
@@ -21,9 +25,6 @@
 	padding-left:380px;
 	padding-top:80px;
 	font-size:16px;
-	}
-.fifth_block p{
-	color:white;
 	}
 .block5_img{
 	float:left;

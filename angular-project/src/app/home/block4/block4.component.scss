@@ -1,10 +1,11 @@
+@import "../../variables.scss";
 .forth_block{
 	position:relative;
 	height:600px;
 }
 .block4_header{
 	font-size:32px;
-	color:#5a5a5a;
+	color:$grey1;
 	margin-bottom:40px;
 }
 .block4_column{
@@ -23,22 +24,22 @@
 .block4_item{
 	display:block;
 	height:140px;
-}
-.block4_item p{
+ 	p{
 	text-align:left;
 	margin-left:150px;
 	width:250px;
 	height:20px;
 	font-size:14px;
 	letter-spacing:0.5px;
-	color:#5a5a5a;
+	color:$grey1;
+}
 }
 .block4_price{
 	position:absolute;
 	float:right;
 	margin:-55px 0px 0px 320px;
 	font-size:14px;
-	color:white;
+	color:$white;
 	padding:8px 15px;
-	background-color:#ac3031;
+	background-color:$color1;
 }

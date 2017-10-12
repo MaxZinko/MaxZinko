@@ -1,7 +1,8 @@
+@import "../../variables.scss";
 .top{
 	height:30px;
 	padding-left:100px;
-	background-color:#ac3031;
+	background-color:$color1;
 }
 .top_media{
 	width:17px;
@@ -12,16 +13,16 @@
 	height:100px;
 	position:relative;
 	padding-right:50px;
-}
-.main_header ul {
+	ul {
 	list-style:none;
 	float:left;
 	margin-top:40px;
 	margin-left:290px;
-	}
-.main_header ul li {
+	 li {
 		display:inline;
 	}
+}
+}
 .restaurant_logo{
 	position:relative;
 	float:left;
@@ -29,7 +30,7 @@
 }
 .menu{
 	font-size:13px;
-	color:#5a5a5a;
+	color:$grey1;
 	text-decoration:none;
 	padding-left:25px;
 }
