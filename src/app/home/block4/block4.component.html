@@ -1,0 +1,24 @@
+<div class="forth_block">
+<div class="block4_column">
+<p class="block4_header">{{column}}</p>
+<div *ngFor="let it of items1" class="block4_item">
+<img class="block4_img" src={{it.img}} alt="">
+<p>
+	<strong>{{it.strongtext}}</strong>
+</p>
+<p>{{it.subtext}}</p>
+<span class="block4_price">{{it.price}}</span>
+</div>
+</div>
+<div class="block4_column">
+<p class="block4_header">{{column}}</p>
+<div *ngFor="let it of items2" class="block4_item">
+<img class="block4_img" src={{it.img}} alt="">
+<p>
+	<strong>{{it.strongtext}}</strong>
+</p>
+<p>{{it.subtext}}</p>
+<span class="block4_price">{{it.price}}</span>
+</div>
+</div>
+</div>

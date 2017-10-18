@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+.first_block{
+	height:630px;
+	width:100%;
+	position:relative;
+	background:url(/assets/block1_img.jpg) no-repeat center center;
+	background-size:cover;
+	
+	}
+.block1_text1{
+    position:absolute;
+    top:185px;  
+    left:20px;
+	background-color:$white;
+	color:$dark-red;
+	padding:10px 20px;
+	font-size:50px;
+	}
+.block1_text2{
+    position:absolute;
+    top:280px;  
+    left:20px;
+	font-size: 18px;
+	color:$white;
+	letter-spacing:2.5px;
+	width:575px;
+	padding:12px 20px;
+	background-color:$dark-red;
+	}
+.block1_text3{
+    position:absolute;
+    top:345px;  
+    left:20px;
+	font-size: 20px;
+	color:$white;
+	letter-spacing:0.5;
+	width:185px;
+	text-align:center;
+	padding:12px 20px;
+	background-color:$dark-red;
+	}

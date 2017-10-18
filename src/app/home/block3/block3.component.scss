@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+.third_block{
+	position:relative;
+	background-color:$color2;
+	height:430px;
+	margin-bottom:70px;
+	margin-top:15%;
+	padding:60px 0px 0px 10%;
+		 h2{
+	position:absolute;
+	text-align:left;
+	color:$white;
+	font-size:32px;
+	}
+}
+.block3_text{
+	position:absolute;
+	text-align:left;
+	width:565px;
+	padding-top:80px;
+	font-size:17px;
+	 p{
+	color:$white;
+	}
+}
+.block3_img{
+	position:absolute;
+	float:left;
+	text-align:left;
+	margin-left:800px;
+		}

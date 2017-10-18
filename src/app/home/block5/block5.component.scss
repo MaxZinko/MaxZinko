@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+.fifth_block{
+	position:relative;
+	background-color:$color2;
+	height:430px;
+	margin-bottom:55px;
+	padding:120px 0px 0px 10%;
+	background-image:url(/assets/block5_bg.jpg);
+	background-size: cover;
+	h2{
+	position:absolute;
+	text-align:left;
+	color:$white;
+	font-size:32px;
+	padding-left:380px;
+	}
+	p{
+	color:$white;
+	}
+}
+.block5_text{
+	position:absolute;
+	text-align:left;
+	width:725px;
+	padding-left:380px;
+	padding-top:80px;
+	font-size:16px;
+	 }
+.block5_img{
+	float:left;
+		}
