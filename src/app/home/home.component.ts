@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Block2Component } from './block2/block2.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,5 +11,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
+MyEvent(e)
+{
+	alert('IT WORKS!');
+}
 }

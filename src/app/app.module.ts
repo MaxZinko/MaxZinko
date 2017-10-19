@@ -15,7 +15,7 @@ import { AuthGuard } from './auth.guard';
 import { UserService } from './user.service'
 const appRoutes:Routes=[
     {
-      path:'home',
+      path:'',
       component:HomeComponent
     },
     {

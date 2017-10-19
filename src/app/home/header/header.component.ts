@@ -36,7 +36,7 @@ public socialweb=[
 public menu=[
 {
 	text:'Homepage',
-	link:'/home'
+	link:'/'
 },
 {
 	text:'About Us',
@@ -44,7 +44,7 @@ public menu=[
 },
 {
 	text:'Menu',
-	link:'/home'
+	link:'/'
 },
 {
 	text:'Reservations',
@@ -52,7 +52,7 @@ public menu=[
 },
 {
 	text:'Restaurant Galary',
-	link:'/home'
+	link:'/'
 },
 {
 	text:'Contact',
