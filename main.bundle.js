@@ -114,7 +114,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var appRoutes = [
     {
-        path: 'home',
+        path: '',
         component: __WEBPACK_IMPORTED_MODULE_4__home_home_component__["a" /* HomeComponent */]
     },
     {
@@ -161,7 +161,7 @@ AppModule = __decorate([
 /***/ "../../../../../src/app/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p class=\"main\">\n  WELLCOME!!!\n</p>\n<p class=\"main\">\n  Logged in successfully!!!\n</p>\n<br>\n<br>\n<br>\n<div class = \"home_ref\">\n<a routerLink=\"/home\"> Return to main page </a>\n</div>"
+module.exports = "<p class=\"main\">\n  WELLCOME!!!\n</p>\n<p class=\"main\">\n  Logged in successfully!!!\n</p>\n<br>\n<br>\n<br>\n<div class = \"home_ref\">\n<a routerLink=\"/\"> Return to main page </a>\n</div>"
 
 /***/ }),
 
@@ -688,7 +688,7 @@ var HeaderComponent = (function () {
         this.menu = [
             {
                 text: 'Homepage',
-                link: '/home'
+                link: '/'
             },
             {
                 text: 'About Us',
@@ -696,7 +696,7 @@ var HeaderComponent = (function () {
             },
             {
                 text: 'Menu',
-                link: '/home'
+                link: '/'
             },
             {
                 text: 'Reservations',
@@ -704,7 +704,7 @@ var HeaderComponent = (function () {
             },
             {
                 text: 'Restaurant Galary',
-                link: '/home'
+                link: '/'
             },
             {
                 text: 'Contact',
@@ -732,7 +732,7 @@ HeaderComponent = __decorate([
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\t<app-block1></app-block1>\n\t<app-block2></app-block2>\n\t<app-block3></app-block3>\n\t<app-block4></app-block4>\n\t<app-block5></app-block5>\n"
+module.exports = "<app-block1></app-block1>\n<app-block2></app-block2>\n<app-block3></app-block3>\n<app-block4></app-block4>\n<app-block5></app-block5>\n<div  class =\"message_button\">\n<button click_button (click)=\"MyEvent($event)\"><strong>Show</strong></button>\n</div>"
 
 /***/ }),
 
@@ -744,7 +744,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".message_button {\n  text-align: center;\n  margin-bottom: 150px;\n  margin-top: 100px; }\n  .message_button button {\n    width: 300px;\n    height: 150px;\n    font-size: 30px; }\n", ""]);
 
 // exports
 
@@ -774,6 +774,9 @@ var HomeComponent = (function () {
     function HomeComponent() {
     }
     HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent.prototype.MyEvent = function (e) {
+        alert('IT WORKS!');
     };
     return HomeComponent;
 }());
