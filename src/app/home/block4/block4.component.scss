@@ -4,7 +4,7 @@
 	height:600px;
 }
 .block4_header{
-	font-size:32px;
+	@include font_size(32px);
 	color:$grey1;
 	margin-bottom:40px;
 }
@@ -29,7 +29,7 @@
 	margin-left:150px;
 	width:250px;
 	height:20px;
-	font-size:14px;
+	@include font_size();
 	letter-spacing:0.5px;
 	color:$grey1;
 	}
@@ -38,7 +38,7 @@
 	position:absolute;
 	float:right;
 	margin:-55px 0px 0px 320px;
-	font-size:14px;
+	@include font_size();
 	color:white;
 	padding:8px 15px;
 	background-color:$color1;
