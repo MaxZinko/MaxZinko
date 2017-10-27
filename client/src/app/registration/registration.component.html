@@ -1,0 +1,8 @@
+<a>1</a>
+<a>2</a>
+<a>3</a>
+<app-general *ngIf="step==1" [product]="product" (productSaved)="saveproduct($event)"></app-general>
+<app-details *ngIf="step==2" ></app-details>
+<app-payment *ngIf="step==3"></app-payment>
+<button (click)="gotoPage(false)">Prew</button>
+<button (click)="gotoPage(true)">Next</button>

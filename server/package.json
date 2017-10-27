@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server_for_my_website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxZinko/maxzinko.git"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "MaxZinko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxZinko/maxzinko/issues"
+  },
+  "homepage": "https://github.com/MaxZinko/maxzinko#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.12.4"
+  }
+}
