@@ -35,6 +35,14 @@ public socialweb=[
 ];
 public menu=[
 {
+	text:'Registration',
+	link:'/registration'
+},
+{
+	text:'Login',
+	link:'/login'
+},
+{
 	text:'Homepage',
 	link:'/'
 },

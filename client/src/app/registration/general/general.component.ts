@@ -5,15 +5,23 @@ import { Component, OnInit,Input, Output ,EventEmitter } from '@angular/core';
   styleUrls: ['./general.component.scss']
 })
 export class GeneralComponent implements OnInit {
+@Input() product:object;
 
-  constructor() { }
+@Output() generalSaved=new EventEmitter();
+file:File;
+public imageloaded=false;
+  constructor() {
+  }
 
   ngOnInit() {
   }
-@Input() product:object;
-@Output() productSaved=new EventEmitter();
-saveproduct()
-{
-	this.productSaved.emit(this.product);
+  getFile(event)
+  {
+  	this.file=event.target.files[0];
+  	this.product["image"]=this.file.name;
+  	this.imageloaded=true;
+  }
+savegeneral() {
+	this.generalSaved.emit(this.product);
 }
 }

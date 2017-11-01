@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input, Output ,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-details',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  @Input() product:object;
+
+@Output() detailsSaved=new EventEmitter();
+
+  constructor() {
+  }
 
   ngOnInit() {
+  	
   }
+savedetails() {
+	this.detailsSaved.emit(this.product);
+}
 
 }

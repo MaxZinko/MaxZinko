@@ -17,19 +17,18 @@
 	list-style:none;
 	float:left;
 	margin-top:40px;
-	margin-left:290px;
-	background-color: #fafafa;
+	margin-left:100px;
+	
 	
 	li{
 		@include font_size(16px);
 		margin-right: 7px;
 		display:inline;
-		@include transition(0.35s);
-	&:hover{
-		background-color:$dark-red;
+		
+	
 	}
 	}
-	}
+	
 }
 .restaurant_logo{
 	position:relative;
@@ -40,5 +39,10 @@
 	font-size:13px;
 	color:$grey1;
 	text-decoration:none;
-	margin-left:25px;
+	background-color: #fafafa;
+	padding:10px 20px;
+	@include transition(0.35s);
+	&:hover{
+		background-color:$dark-red;
+	}
 }

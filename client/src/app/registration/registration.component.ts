@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {DatePickerComponent} from 'ng2-date-picker';
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
@@ -7,22 +7,59 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor() { }
+public step=1;
+public product: object={
+  	image:'',
+  	title: '',
+	description:'',
+	price:'',
+	quantity:'',
+	category:'',
+	isauction:'',
+	startdate:'',
+	enddate:'',
+	startprice:'',
+	step:'',
+	cardnumber:'',
+	month:'',
+	year:'',
+	cvc:'',
+	step1saved:false,
+	step2saved:false,
+	step3saved:false
+};
+  constructor() {
+  	 }
 
   ngOnInit() {
   }
-public step=1;
-public product={
-	title:''
-}
+
 gotoPage(isNext){
 this.step+=(isNext)?1:-1;
 }
-saveproduct(product)
+savegeneral(product: object)
 {
- this.product.title=product.title;
+this.step++;
+this.product = product;
+this.product["step1saved"]=true;
+ console.log(this.product);
+}
+savedetails(product: object)
+{
+this.step++;
+this.product = product;
+this.product["step2saved"]=true;
+ console.log(this.product);
+}
+savepayment(product: object)
+{
+this.product = product;
+this.product["step3saved"]=true;
+ console.log(this.product);
+}
+finish(product: object)
+{
  this.step++;
- console.log("saved");
  console.log(this.product);
 }
 }

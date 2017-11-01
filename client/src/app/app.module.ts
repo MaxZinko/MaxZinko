@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'
 import {RouterModule,Routes} from '@angular/router';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import {DpDatePickerModule} from 'ng2-date-picker';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { Block1Component } from './home/block1/block1.component';
@@ -16,7 +18,8 @@ import { UserService } from './user.service';
 import { RegistrationComponent } from './registration/registration.component';
 import { GeneralComponent } from './registration/general/general.component';
 import { DetailsComponent } from './registration/details/details.component';
-import { PaymentComponent } from './registration/payment/payment.component'
+import { PaymentComponent } from './registration/payment/payment.component';
+import { InfoComponent } from './registration/info/info.component'
 const appRoutes:Routes=[
     {
       path:'',
@@ -33,7 +36,7 @@ const appRoutes:Routes=[
     {
       path:'registration',
       component: RegistrationComponent
-    }
+    },
     ];
 @NgModule({
   declarations: [
@@ -50,10 +53,13 @@ const appRoutes:Routes=[
     RegistrationComponent,
     GeneralComponent,
     DetailsComponent,
-    PaymentComponent
+    PaymentComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    DpDatePickerModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [UserService],
