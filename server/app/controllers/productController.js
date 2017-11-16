@@ -1,5 +1,6 @@
 let mongoose = require('mongoose');
-Product = mongoose.model('products'),bcrypt=required('bcryptjs');//npm install bcryptjs --save | DONE!
+var productDirectory = require('../models/products');
+var Product = mongoose.model('products'),bcrypt=require('bcryptjs');//npm install bcryptjs --save | DONE!
 
 exports.getProducts = function(req,res){
 	Product.find({},'title',function(err,products){
