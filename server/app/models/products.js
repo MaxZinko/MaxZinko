@@ -1,6 +1,11 @@
 let mongoose=require('mongoose');
 let Schema=mongoose.Schema;
+ObjectId=Schema.ObjectId;
 let productSchema = new Schema({
+	_id: {
+		type:ObjectId,
+		auto:true
+	},
 	title:{type:String,required:true,minLength:11},
 	image:{type:String,required:true},
 	description:{type:String,required:true, maxLength:1000},

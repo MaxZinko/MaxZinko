@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core'
 import {RouterModule,Routes} from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import {DpDatePickerModule} from 'ng2-date-picker';
@@ -19,7 +20,8 @@ import { RegistrationComponent } from './registration/registration.component';
 import { GeneralComponent } from './registration/general/general.component';
 import { DetailsComponent } from './registration/details/details.component';
 import { PaymentComponent } from './registration/payment/payment.component';
-import { InfoComponent } from './registration/info/info.component'
+import { InfoComponent } from './registration/info/info.component';
+import { TableComponent } from './table/table.component'
 const appRoutes:Routes=[
     {
       path:'',
@@ -37,6 +39,10 @@ const appRoutes:Routes=[
       path:'registration',
       component: RegistrationComponent
     },
+    {
+      path:'table',
+      component: TableComponent
+    }
     ];
 @NgModule({
   declarations: [
@@ -54,12 +60,14 @@ const appRoutes:Routes=[
     GeneralComponent,
     DetailsComponent,
     PaymentComponent,
-    InfoComponent
+    InfoComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     DpDatePickerModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [UserService],
