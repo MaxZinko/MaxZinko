@@ -1,12 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {DatePickerComponent} from 'ng2-date-picker';
+import {HttpClient } from '@angular/common/http';
+import {UserService} from '../user.service';
+
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.scss']
 })
 export class RegistrationComponent implements OnInit {
-
+public step1saved=false;
+public step2saved=false;
+public step3saved=false;
+public isauction='';
 public step=1;
 public product: object={
   	image:'',
@@ -15,22 +21,19 @@ public product: object={
 	price:'',
 	quantity:'',
 	category:'',
-	isauction:'',
 	startdate:'',
 	enddate:'',
 	startprice:'',
-	step:'',
 	cardnumber:'',
 	month:'',
 	year:'',
 	cvc:'',
-	step1saved:false,
-	step2saved:false,
-	step3saved:false
+	email:''
 };
-  constructor() {
+  constructor(private http:HttpClient,private userService:UserService) {
   	 }
 
+  	API_URL='http://localhost:8000/app/v1/products';
   ngOnInit() {
   }
 
@@ -41,25 +44,24 @@ savegeneral(product: object)
 {
 this.step++;
 this.product = product;
-this.product["step1saved"]=true;
- console.log(this.product);
+this.step1saved=true;
 }
 savedetails(product: object)
 {
 this.step++;
 this.product = product;
-this.product["step2saved"]=true;
- console.log(this.product);
+this.step2saved=true;
 }
 savepayment(product: object)
 {
 this.product = product;
-this.product["step3saved"]=true;
+this.step3saved=true;
  console.log(this.product);
 }
 finish(product: object)
 {
  this.step++;
  console.log(this.product);
+ this.userService.setUser(this.API_URL,this.product);
 }
 }

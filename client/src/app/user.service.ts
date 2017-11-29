@@ -48,11 +48,19 @@ constructor(private http:HttpClient) {
   getUsers():Observable<any[]>{
     return this.users.asObservable();
   }
-  //getUsers():Observable<User[]>{
-    //return this.http.get(this.baseurl+'/products').map((res)=>{
-      //return res.json();
-    //}).catch((err)=>Observable.throw(err));
-  //}
+  setUser(API_URL,product)
+  {
+    return this.http.post(API_URL, product)
+      .forEach(res => {
+        const result = res;
+        console.log('result', result);});
+  }
+  deleteUser(id){
+    this.http.delete(USER_DATA_URL+'/'+id).subscribe(id=>console.log(id));
+  }
+  updateUser(product){
+    this.http.put(USER_DATA_URL+'/'+product["_id"],product).subscribe(product=>console.log(product));
+  }
   //getUsers(callback){
   	//this.http.get(this.baseurl+'/products'/*+id*/).subscribe(users=>{callback(users);});
   //}

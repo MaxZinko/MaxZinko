@@ -3,6 +3,7 @@ let app = new express();
 let port = 8000;
 let bodyParser = require('body-parser');//npm install body-parser? --save | DONE
 let mongoose = require('mongoose');
+let stripe=require('stripe')('sk_test_BQokikJOvBiI2HlWgH4olfQ2');
 let router = require('./app/routers/api.js');
 mongoose.connect('mongodb://localhost/products');//need to write db name
 app.use(function(req,res,next){

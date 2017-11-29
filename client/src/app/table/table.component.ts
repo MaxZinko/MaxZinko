@@ -14,6 +14,7 @@ public users=[];
 
   ngOnInit() {
   	this.getUsers();
+    
   	//this.usersService.getUsers().subscribe((users)=>{ this.users=users;});
   	//console.log(this.users);
   }
@@ -24,6 +25,12 @@ public users=[];
         this.users = users;
         console.log(this.users);
 });}
+ deleteUser(id){
+   this.userService.deleteUser(id);
+ }
+ updateUser(product){
+   this.userService.updateUser(product);
+ }
 //  	});
 //}
 
