@@ -5,6 +5,7 @@ import {Subject } from 'rxjs';
 //import 'rxjs/add/operator/map';
 //import 'rxjs/add/operator/catch';
 const USER_DATA_URL='http://localhost:8000/app/v1/products';
+const PAYMENT_URL='http://localhost:8000/app/v1/stripe';
 @Injectable()
 //class User{
 // _id:string;
@@ -60,6 +61,9 @@ constructor(private http:HttpClient) {
   }
   updateUser(product){
     this.http.put(USER_DATA_URL+'/'+product["_id"],product).subscribe(product=>console.log(product));
+  }
+  pay(payment){
+    return this.http.post(PAYMENT_URL,payment).subscribe((payment)=>console.log(payment));
   }
   //getUsers(callback){
   	//this.http.get(this.baseurl+'/products'/*+id*/).subscribe(users=>{callback(users);});

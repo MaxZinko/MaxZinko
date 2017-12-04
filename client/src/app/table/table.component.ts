@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UserService} from '../user.service';
-
+import {Router} from '@angular/router';
+import { RegistrationComponent } from '../registration/registration.component'
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -8,7 +9,8 @@ import {UserService} from '../user.service';
 })
 export class TableComponent implements OnInit {
 public users=[];
-  constructor(private userService:UserService) { 
+public id="";
+  constructor(private router:Router,private userService:UserService) { 
   	this.userService.uploadUsers();
   }
 
@@ -27,6 +29,10 @@ public users=[];
 });}
  deleteUser(id){
    this.userService.deleteUser(id);
+ }
+ sendtoform(product){
+   this.id=product._id;
+   console.log(this.id);
  }
  updateUser(product){
    this.userService.updateUser(product);
