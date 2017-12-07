@@ -16,8 +16,8 @@ public payment={
   number:'',
   month:'',
   year:'',
-  code:'',
-  price:''
+  cvc:'',
+  amount:''
 };
   constructor(private router:Router,private userService:UserService) {
   }
@@ -40,8 +40,8 @@ this.payment["email"]=this.product["email"];
 this.payment["number"]=this.product["cardnumber"];
 this.payment["year"]=this.product["year"];
 this.payment["month"]=this.product["month"];
-this.payment["code"]=this.product["cvc"];
-this.payment["price"]=this.product["price"];
+this.payment["cvc"]=this.product["cvc"];
+this.payment["amount"]=this.product["price"];
 console.log(this.payment);
 this.userService.pay(this.payment);
 }

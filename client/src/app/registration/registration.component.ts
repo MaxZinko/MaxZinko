@@ -37,7 +37,8 @@ public product: object={
 
   	API_URL='http://localhost:8000/app/v1/products';
   ngOnInit() {
-  	this.product=this.updateproduct;
+
+		this.product=this.updateproduct ? this.updateproduct : {};
   }
 
 gotoPage(isNext){
